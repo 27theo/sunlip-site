@@ -1,0 +1,155 @@
+:root {
+    --padding: 2rem;
+    --orange: #d12d00;
+    --blue: #2600b6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Creato Display';
+    src: url('fonts/CreatoDisplay-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Iosevka';
+    src: url('fonts/Iosevka-Regular.ttc') format('truetype-collection');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: 'Creato Display', sans-serif;
+}
+
+.landing {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--orange);
+}
+
+.floating-nav {
+    position: absolute;
+    top: var(--padding);
+    left: var(--padding);
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Creato Display', sans-serif;
+    font-size: 1.1rem;
+
+    animation: fadeIn 1.5s ease-in;
+}
+
+.nav-item {
+    color: white;
+    list-style: none;
+    line-height: 3rem;
+
+    & a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+        letter-spacing: 0.05rem;
+
+        transition: color 0.3s ease;
+    }
+
+    & a:hover {
+        color: var(--blue);
+    }
+}
+
+.floating-logo {
+    position: absolute;
+    bottom: var(--padding);
+    right: var(--padding);
+
+    animation: fadeIn 1s ease-in;
+
+    & img {
+        max-width: calc(100vw - 2 * var(--padding));
+    }
+}
+
+.slideshow {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: var(--padding);
+    flex-wrap: wrap;
+
+    & img {
+        width: min(20rem, calc(100vw - 3 * var(--padding)));
+    }
+}
+
+.content {
+    margin-top: var(--padding);
+
+    color: var(--blue);
+    padding: var(--padding);
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: var(--padding);
+
+    min-height: calc(100vh - 2 * var(--padding));
+}
+
+.card {
+    border-left: 3px solid var(--blue);
+    padding-left: var(--padding);
+    margin-bottom: 2rem;
+    width: calc(100vw - 3 * var(--padding));
+
+    & h2 {
+        font-size: 2.4rem;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 1.2rem;
+    }
+
+    & p {
+        font-size: 1.3rem;
+        margin: 0;
+        max-width: 900px;
+    }
+
+    & p:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    & a {
+        color: var(--blue);
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: var(--orange);
+        }
+    }
+}

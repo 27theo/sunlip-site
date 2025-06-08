@@ -60,7 +60,7 @@ body {
     font-family: 'Creato Display', sans-serif;
     font-size: 1.1rem;
 
-    animation: fadeIn 1.5s ease-in;
+    animation: fadeIn 0.9s ease-in;
 }
 
 .nav-item {
@@ -87,7 +87,7 @@ body {
     bottom: var(--padding);
     right: var(--padding);
 
-    animation: fadeIn 1s ease-in;
+    animation: fadeIn 0.5s ease-in;
 
     & img {
         max-width: calc(100vw - 2 * var(--padding));

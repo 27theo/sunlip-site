@@ -45,6 +45,12 @@ body {
     background-color: var(--orange);
 }
 
+@supports (height: 100svh) {
+    .landing {
+        height: 100svh;
+    }
+}
+
 .floating-nav {
     position: absolute;
     top: var(--padding);

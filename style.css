@@ -187,11 +187,14 @@ body {
 
     & a {
         color: var(--blue);
-        text-decoration: none;
         transition: color 0.3s ease;
 
         &:hover {
             color: var(--orange);
         }
     }
+}
+
+.orange {
+    color: var(--orange) !important;
 }

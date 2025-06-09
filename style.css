@@ -33,6 +33,16 @@ html {
     }
 }
 
+@keyframes fadeInSun {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.1;
+    }
+}
+
 @keyframes floatIn {
     from {
         transform: translateX(min(100vw, 1000px));
@@ -60,6 +70,20 @@ body {
     .landing {
         height: 100svh;
     }
+}
+
+.background-sun {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/sun.webp');
+    background-size: 80vh;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    animation: fadeInSun 0.8s ease-in;
 }
 
 .floating-nav {

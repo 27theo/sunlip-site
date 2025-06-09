@@ -6,6 +6,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -29,6 +30,16 @@ html {
 
     to {
         opacity: 1;
+    }
+}
+
+@keyframes floatIn {
+    from {
+        transform: translateX(min(100vw, 1000px));
+    }
+
+    to {
+        transform: translateX(0);
     }
 }
 
@@ -93,7 +104,8 @@ body {
     bottom: var(--padding);
     right: var(--padding);
 
-    animation: fadeIn 0.5s ease-in;
+    animation: fadeIn 1.2s ease-in;
+    animation: floatIn 1.2s ease-in-out;
 
     & img {
         max-width: calc(100vw - 2 * var(--padding));

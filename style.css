@@ -56,6 +56,7 @@ html {
 body {
     margin: 0;
     font-family: 'Creato Display', sans-serif;
+    background-color: var(--orange);
 }
 
 .landing {
@@ -150,6 +151,8 @@ body {
 
 main {
     margin-top: var(--padding);
+    
+    background-color: white;
 
     display: flex;
     flex-direction: row;
@@ -240,5 +243,26 @@ main {
 
     .sidebar {
         display: none;
+    }
+}
+
+.bar {
+    width: 100vw;
+    height: 50px;
+
+    background-color: var(--orange);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+
+    & p,
+    & a {
+        color: white;
+    }
+
+    & p {
+        margin-right: 1.5rem;
     }
 }

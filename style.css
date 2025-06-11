@@ -55,6 +55,7 @@ html {
 
 body {
     margin: 0;
+    overflow-x: hidden;
     font-family: 'Creato Display', sans-serif;
     background-color: var(--orange);
 }
@@ -150,6 +151,8 @@ body {
 }
 
 main {
+    width: 100vw;
+
     margin-top: var(--padding);
     
     background-color: white;

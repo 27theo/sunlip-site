@@ -191,7 +191,7 @@ main {
     border-left: 3px solid var(--blue);
     padding-left: var(--padding);
     margin-bottom: 2rem;
-    width: calc(100% - 3 * var(--padding));
+    width: calc(100% - var(--padding));
 
     & h2 {
         font-size: 2.4rem;

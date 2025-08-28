@@ -58,7 +58,7 @@ body {
 
     background-color: var(--orange);
 
-    background-image: url('img/contours.webp');
+    background-image: url('img/contours.png');
     background-position: bottom right;
 
     animation: fadeIn 0.9s ease-in;
@@ -66,8 +66,15 @@ body {
 
 @media (max-width: 1200px) {
     .landing {
-        background-image: url('img/top_contours.webp');
+        background-position: top right;
+        background-image: url('img/contours_top.png');
         background-position: -700px;
+    }
+}
+
+@media (max-width: 500px) {
+    .landing {
+        background-position: -600px;
     }
 }
 

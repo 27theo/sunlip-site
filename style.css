@@ -140,7 +140,7 @@ body {
 main {
     width: 100vw;
 
-    margin-top: var(--padding);
+    padding-top: var(--padding);
     
     background-color: white;
 

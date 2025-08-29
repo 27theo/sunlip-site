@@ -143,22 +143,6 @@ main {
     justify-content: space-between;
 }
 
-.sidebar {
-    padding: var(--padding);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: end;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    margin-right: var(--padding);
-
-    & img {
-        width: min(20rem, calc(100vw - 3 * var(--padding)));
-    }
-}
-
 .content {
     color: var(--blue);
     padding: var(--padding);
@@ -184,6 +168,12 @@ main {
         margin-bottom: 1.2rem;
     }
 
+    & h3 {
+        font-size: 1.8rem;
+        padding: 0;
+        margin: 2rem 0 1.2rem 0;
+    }
+
     & p {
         font-size: 1.3rem;
         margin: 0;
@@ -206,24 +196,6 @@ main {
 
 .orange {
     color: var(--orange) !important;
-}
-
-#identity {
-    display: none;
-}
-
-.sidebar {
-    display: flex;
-}
-
-@media (max-width: 1200px) {
-    #identity {
-        display: block;
-    }
-
-    .sidebar {
-        display: none;
-    }
 }
 
 .footer {

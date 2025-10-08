@@ -63,6 +63,9 @@ body {
     background-size: cover;
 
     animation: fadeIn 0.9s ease-in;
+
+    display: flex;
+    flex-direction: column;
 }
 
 @supports (height: 100svh) {
@@ -216,5 +219,25 @@ main {
 
     & p {
         margin-right: 1.5rem;
+    }
+}
+
+.mailing {
+    padding: var(--padding);
+    justify-self: center;
+    align-self: center;
+
+    & iframe {
+        background-color: #222;
+        border: none;
+        width: min(700px, calc(100vw - 2 * var(--padding)));
+        
+        & powered-by-button {
+            display: none !important;
+        }
+    }
+
+    & a {
+        color: white;
     }
 }

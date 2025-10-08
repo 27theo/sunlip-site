@@ -222,22 +222,27 @@ main {
     }
 }
 
-.mailing {
-    padding: var(--padding);
-    justify-self: center;
-    align-self: center;
+.promo {
+    background-color: black !important;
+    animation: none !important;
 
-    & iframe {
-        background-color: #222;
-        border: none;
-        width: min(700px, calc(100vw - 2 * var(--padding)));
-        
-        & powered-by-button {
-            display: none !important;
+    & .mailing {
+        padding: var(--padding);
+        justify-self: center;
+        align-self: center;
+
+        & iframe {
+            background-color: #222;
+            border: none;
+            width: min(700px, calc(100vw - 2 * var(--padding)));
+            
+            & powered-by-button {
+                display: none !important;
+            }
         }
-    }
 
-    & a {
-        color: white;
+        & a {
+            color: white;
+        }
     }
 }

@@ -198,10 +198,10 @@ main {
     flex-wrap: wrap;
 
     & .release {
-        width: 350px;
+        width: calc(min(350px, 100%));
 
         & .cover {
-            width: 300px;
+            width: calc(min(300px, 100%));
         }
 
         & a {
